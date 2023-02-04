@@ -5,34 +5,36 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StorePemesananRequest;
 use App\Http\Requests\UpdatePemesananRequest;
 use App\Models\Pemesanan;
+use App\Models\Produksi;
 
 class PemesananController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
+        $data = Pemesanan::all();
+        $data->load('barang');
         return view('table-list', [
+            'data' => $data,
             'title_page' => 'Pemesanan',
             'table_headers' => [ 'id_pesanan', 'Nama Pemesan', 'Nama Barang', 'Jumlah Pesanan' ],
             'links_sidebar' => [
                 ['Pemesanan', '/pemesanan'],
-                ['Produksi', '/pemesanan/produksi'],
+                ['Pesanan Produksi', '/pemesanan/produksi'],
               ]
         ]);
     }
-
     public function readProduksi()
     {
+        $data = Produksi::all();
+        $data->load('barang');
+        $data->load('pesanan');
         return view('table-list', [
+            'data' => $data,
             'title_page' => 'Pesanan Produksi',
-            'table_headers' => [ 'id_produksi', 'Nama Barang', 'Produksi', 'Jumlah Produksi', 'Lead Time' ],
+            'table_headers' => [ 'id_produksi', 'Nama Barang', 'Nama Pemesan','Jumlah Produksi', 'Proses', 'Lead Time' ],
             'links_sidebar' => [
                 ['Pemesanan', '/pemesanan'],
-                ['Produksi', '/pemesanan/produksi'],
+                ['Pesanan Produksi', '/pemesanan/produksi'],
               ]
         ]);
     }
@@ -58,39 +60,6 @@ class PemesananController extends Controller
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Pemesanan  $pemesanan
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Pemesanan $pemesanan)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Pemesanan  $pemesanan
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Pemesanan $pemesanan)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \App\Http\Requests\UpdatePemesananRequest  $request
-     * @param  \App\Models\Pemesanan  $pemesanan
-     * @return \Illuminate\Http\Response
-     */
-    public function update(UpdatePemesananRequest $request, Pemesanan $pemesanan)
-    {
-        //
-    }
 
     /**
      * Remove the specified resource from storage.

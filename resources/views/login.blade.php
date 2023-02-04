@@ -16,12 +16,19 @@
                                     <div class="text-center">
                                         <h4 class="text-dark mb-4">Welcome to <br>BullWhip Task Team 4!</h4>
                                     </div>
-                                    <form class="user py-3">
+                                    <form class="user py-3" method="POST" action="/login">
                                         @csrf
                                         <div class="mb-3"><input class="form-control form-control-user" type="text" id="exampleInputUsername" aria-describedby="emailHelp" placeholder="Username" name="username"></div>
                                         <div class="mb-3"><input class="form-control form-control-user" type="password" id="exampleInputPassword" placeholder="Password" name="password"></div>
                                        <button class="btn btn-primary d-block btn-user w-100 my-3" type="submit">Login</button>
                                     </form>
+                                    @if(count($errors) > 0)
+                                        @foreach ($errors->all() as $error)
+                                        <div class="alert alert-primary" role="alert">
+                                            {{ $error }}
+                                        </div>
+                                        @endforeach
+                                    @endif
                                 </div>
                             </div>
                         </div>

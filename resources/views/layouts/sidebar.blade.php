@@ -12,7 +12,7 @@
                 @else <li class="nav-item"><a class="nav-link" href="{{ url(''.$link) }}"><i class="fas fa-table"></i><span>{{$name}}</span></a></li>
                 @endif
             @endforeach
-            <li class="nav-item"><a class="nav-link" ><i class="fa fa-door-closed"></i><span>Log Out</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="/logout" ><i class="fa fa-door-closed"></i><span>Log Out</span></a></li>
         </ul>
     </div>
 </nav>

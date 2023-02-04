@@ -9,6 +9,7 @@ class Pemesanan extends Model
 {
     use HasFactory;
     protected $table = 'pemesanan';
+    protected $primaryKey = 'id_pesanan';
     protected $fillable = [
         'nama_pemesan',
         'id_barang',
@@ -17,6 +18,6 @@ class Pemesanan extends Model
         'archive_status'
     ];
     public function barang(){
-        return $this->belongsTo('App\Barang', 'id_barang');
+        return $this->belongsTo('App\Models\Barang', 'id_barang', 'id_barang');
     }
 }

@@ -4,22 +4,18 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreBarangRequest;
 use App\Http\Requests\UpdateBarangRequest;
+use Illuminate\Http\Request;
 use App\Models\Barang;
 
 class BarangController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $data = Barang::where('archive_status', false)->get();
         return view('table-list', [
             'data' => $data,
             'title_page' => 'Barang',
-            'table_headers' => [ 'id_barang', 'Nama Barang' ],
+            'table_headers' => [ 'id_barang', 'Nama Barang', 'Action' ],
             'add_link' => '/admin/barang/create',
             'links_sidebar' => [
                 ['Pegawai', '/admin/pegawai'],
@@ -28,12 +24,6 @@ class BarangController extends Controller
               ]
         ]);
     }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         return view('form', [
@@ -46,24 +36,11 @@ class BarangController extends Controller
               ]
         ]);
     }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \App\Http\Requests\StoreBarangRequest  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(StoreBarangRequest $request)
+    public function store(Request $request)
     {
-        //
+        Barang::create(['nama_barang' => $request['nama_barang']]);
+        return redirect('/admin/barang');
     }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Barang  $barang
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
         $data = Barang::find($id);
@@ -78,25 +55,13 @@ class BarangController extends Controller
               ]
         ]);
     }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \App\Http\Requests\UpdateBarangRequest  $request
-     * @param  \App\Models\Barang  $barang
-     * @return \Illuminate\Http\Response
-     */
-    public function update(UpdateBarangRequest $request, Barang $barang)
+    public function update(Request $request, $id)
     {
-        //
+        $data = Barang::find($id);
+        $data['nama_barang'] = $request['nama_barang'];
+        $data->save();
+        return redirect("/admin/barang");
     }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Barang  $barang
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
         $data = Barang::find($id);

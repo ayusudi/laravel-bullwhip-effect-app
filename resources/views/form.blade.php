@@ -16,7 +16,10 @@
                 @include('forms.barang-create')
             @elseif ($form_type === 'update_barang')
                 @include('forms.barang-update', ['data' => $data])
-
+            @elseif ($form_type === 'create_bagian')
+                @include('forms.bagian-create')
+            @elseif ($form_type === 'update_bagian')
+                @include('forms.bagian-update', ['data' => $data])
             @endif
             </div>
         </div>

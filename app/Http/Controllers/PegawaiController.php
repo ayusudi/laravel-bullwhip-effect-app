@@ -4,15 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StorePegawaiRequest;
 use App\Http\Requests\UpdatePegawaiRequest;
+use Illuminate\Http\Request;
 use App\Models\Pegawai;
 
 class PegawaiController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index($error = '')
     {
         $data = Pegawai::where('archive_status', false)->get();
@@ -30,11 +26,6 @@ class PegawaiController extends Controller
         ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         return view('form', [
@@ -48,23 +39,19 @@ class PegawaiController extends Controller
         ]);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \App\Http\Requests\StorePegawaiRequest  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(StorePegawaiRequest $request)
+    public function store(Request $request)
     {
-        //
+        Pegawai::create([
+            'username' => $request['username'],
+            'password' => $request['password'],
+            'nama_pegawai' => $request['nama_pegawai'],
+            'id_bagian' => $request['id_bagian'],
+            'hp_pegawai' => $request['hp_pegawai'],
+            'alamat_pegawai' => $request['alamat_pegawai']
+        ]);
+        return redirect("/admin/pegawai");
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Pegawai  $pegawai
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
         $data = Pegawai::find($id);
@@ -79,25 +66,18 @@ class PegawaiController extends Controller
               ]
         ]);
     }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \App\Http\Requests\UpdatePegawaiRequest  $request
-     * @param  \App\Models\Pegawai  $pegawai
-     * @return \Illuminate\Http\Response
-     */
-    public function update(UpdatePegawaiRequest $request, Pegawai $pegawai)
+    public function update(Request $request, $id)
     {
-        //
+        $data = Pegawai::find($id);
+        $data['username'] = $request['username'];
+        $data['password'] = $request['password'];
+        $data['nama_pegawai'] = $request['nama_pegawai'];
+        $data['hp_pegawai'] = $request['hp_pegawai'] ;
+        $data['id_bagian'] = $request['id_bagian'];
+        $data['alamat_pegawai'] = $request['alamat_pegawai'];
+        $data->save();
+        return redirect("/admin/pegawai");
     }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Pegawai  $pegawai
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
         $pegawai = Pegawai::find($id);

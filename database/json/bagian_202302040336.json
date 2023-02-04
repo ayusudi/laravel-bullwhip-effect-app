@@ -1,28 +1,29 @@
 {
-"bagian": [
-	{
-		"id_bagian" : 7,
-		"nama_bagian" : "administrator",
-		"archive_status" : 0
-	},
-	{
-		"id_bagian" : 8,
-		"nama_bagian" : "manajer",
-		"archive_status" : 0
-	},
-	{
-		"id_bagian" : 9,
-		"nama_bagian" : "gudang",
-		"archive_status" : 0
-	},
-	{
-		"id_bagian" : 10,
-		"nama_bagian" : "pesanan",
-		"archive_status" : 0
-	},
-	{
-		"id_bagian" : 11,
-		"nama_bagian" : "produksi",
-		"archive_status" : 0
-	}
-]}
+	"bagian": [
+		{
+			"id_bagian": 7,
+			"nama_bagian": "administrator",
+			"archive_status": 0
+		},
+		{
+			"id_bagian": 8,
+			"nama_bagian": "manajer",
+			"archive_status": 0
+		},
+		{
+			"id_bagian": 9,
+			"nama_bagian": "gudang",
+			"archive_status": 0
+		},
+		{
+			"id_bagian": 10,
+			"nama_bagian": "pesanan",
+			"archive_status": 0
+		},
+		{
+			"id_bagian": 11,
+			"nama_bagian": "produksi",
+			"archive_status": 0
+		}
+	]
+}

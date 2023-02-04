@@ -25,7 +25,8 @@
             </li>
             <div class="d-none d-sm-block topbar-divider"></div>
             <li class="nav-item dropdown no-arrow">
-                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">Admin (Admin)</span><img class="border rounded-circle img-profile" src="/assets/img/avatars/avatar1.jpeg"></a>
+                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">
+                {{'@'.\Session::get('username')}} ({{\Session::get('nama_bagian')}})</span><img class="border rounded-circle img-profile" src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png"></a>
                 </div>
             </li>
         </ul>

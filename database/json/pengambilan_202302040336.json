@@ -1,17 +1,18 @@
 {
-"pengambilan": [
-	{
-		"id_pengambilan" : 4,
-		"id_barang" : 24,
-		"nama_pengambil" : "mandiri cabang pahlawan",
-		"jumlah_pengambilan" : "200",
-		"archive_status" : 0
-	},
-	{
-		"id_pengambilan" : 5,
-		"id_barang" : 25,
-		"nama_pengambil" : "mandiri cabang pahlawan",
-		"jumlah_pengambilan" : "100",
-		"archive_status" : 0
-	}
-]}
+	"pengambilan": [
+		{
+			"id_pengambilan": 4,
+			"id_barang": 24,
+			"nama_pengambil": "mandiri cabang pahlawan",
+			"jumlah_pengambilan": "200",
+			"archive_status": 0
+		},
+		{
+			"id_pengambilan": 5,
+			"id_barang": 25,
+			"nama_pengambil": "mandiri cabang pahlawan",
+			"jumlah_pengambilan": "100",
+			"archive_status": 0
+		}
+	]
+}

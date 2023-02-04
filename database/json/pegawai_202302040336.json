@@ -1,43 +1,94 @@
 {
-"pegawai": [
-	{
-		"id_pegawai" : 7,
-		"username" : "admin",
-		"password" : "admin",
-		"nama_pegawai" : "administrator",
-		"alamat_pegawai" : "kantor",
-		"hp_pegawai" : "085214021108",
-		"id_bagian" : 7,
-		"archive_status" : 0
-	},
-	{
-		"id_pegawai" : 9,
-		"username" : "satria",
-		"password" : "admin",
-		"nama_pegawai" : "satria",
-		"alamat_pegawai" : "semarang",
-		"hp_pegawai" : "085214021108",
-		"id_bagian" : 7,
-		"archive_status" : 0
-	},
-	{
-		"id_pegawai" : 10,
-		"username" : "amir",
-		"password" : "amir",
-		"nama_pegawai" : "amir",
-		"alamat_pegawai" : "semarang",
-		"hp_pegawai" : "08080808",
-		"id_bagian" : 8,
-		"archive_status" : 0
-	},
-	{
-		"id_pegawai" : 11,
-		"username" : "anin",
-		"password" : "pemesanan",
-		"nama_pegawai" : "anin",
-		"alamat_pegawai" : "semarang",
-		"hp_pegawai" : "004859",
-		"id_bagian" : 10,
-		"archive_status" : 0
-	}
-]}
+	"pegawai": [
+		{
+			"id_pegawai": 7,
+			"username": "admin",
+			"password": "admin",
+			"nama_pegawai": "administrator",
+			"alamat_pegawai": "kantor",
+			"hp_pegawai": "085214021108",
+			"id_bagian": 7,
+			"archive_status": 0
+		},
+		{
+			"id_pegawai": 9,
+			"username": "satria",
+			"password": "admin",
+			"nama_pegawai": "satria",
+			"alamat_pegawai": "semarang",
+			"hp_pegawai": "085214021108",
+			"id_bagian": 7,
+			"archive_status": 0
+		},
+		{
+			"id_pegawai": 10,
+			"username": "amir",
+			"password": "amir",
+			"nama_pegawai": "amir",
+			"alamat_pegawai": "semarang",
+			"hp_pegawai": "08080808",
+			"id_bagian": 8,
+			"archive_status": 0
+		},
+		{
+			"id_pegawai": 11,
+			"username": "anin",
+			"password": "pemesanan",
+			"nama_pegawai": "anin",
+			"alamat_pegawai": "semarang",
+			"hp_pegawai": "004859",
+			"id_bagian": 10,
+			"archive_status": 0
+		},
+		{
+			"id_pegawai": 12,
+			"username": "admin123",
+			"password": "admin",
+			"nama_pegawai": "admin123",
+			"alamat_pegawai": "kantor",
+			"hp_pegawai": "085214021102",
+			"id_bagian": 7,
+			"archive_status": 0
+		},
+		{
+			"id_pegawai": 13,
+			"username": "manajer123",
+			"password": "manajer",
+			"nama_pegawai": "manajer123",
+			"alamat_pegawai": "kantor",
+			"hp_pegawai": "085214021103",
+			"id_bagian": 8,
+			"archive_status": 0
+		},
+		{
+			"id_pegawai": 14,
+			"username": "gudang123",
+			"password": "gudang",
+			"nama_pegawai": "gudang123",
+			"alamat_pegawai": "kantor",
+			"hp_pegawai": "085214021104",
+			"id_bagian": 9,
+			"archive_status": 0
+		},
+		{
+			"id_pegawai": 15,
+			"username": "pesanan123",
+			"password": "pesanan",
+			"nama_pegawai": "pesanan123",
+			"alamat_pegawai": "kantor",
+			"hp_pegawai": "085214021105",
+			"id_bagian": 10,
+			"archive_status": 0
+		},
+		{
+			"id_pegawai": 16,
+			"username": "produksi123",
+			"password": "produksi",
+			"nama_pegawai": "produksi123",
+			"alamat_pegawai": "kantor",
+			"hp_pegawai": "085214021109",
+			"id_bagian": 11,
+			"archive_status": 0
+		}
+	]
+}

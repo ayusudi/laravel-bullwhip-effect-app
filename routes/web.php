@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Middleware\SessionNamaBagian;
+ 
 
 /*
 |--------------------------------------------------------------------------
@@ -12,49 +14,59 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/','App\Http\Controllers\Controller@landingPage');
 Route::get('/login','App\Http\Controllers\Controller@index');
+Route::post('/login','App\Http\Controllers\Controller@doLoginDevelopment');
+Route::get('/logout','App\Http\Controllers\Controller@logout');
 
 // //! Admin Foreign Key 7
-Route::get("/admin/pegawai",'App\Http\Controllers\PegawaiController@index');
-Route::get("/admin/pegawai/create",'App\Http\Controllers\PegawaiController@create');
-Route::post("/admin/pegawai/ceate",'App\Http\Controllers\PegawaiController@store');
-Route::get("/admin/pegawai/update/{id}",'App\Http\Controllers\PegawaiController@edit');
-Route::post("/admin/pegawai/update/{id}",'App\Http\Controllers\PegawaiController@update');
-Route::get("/admin/pegawai/delete/{id}",'App\Http\Controllers\PegawaiController@destroy');
-Route::get("/admin/bagian",'App\Http\Controllers\BagianController@index');
-Route::get("/admin/barang",'App\Http\Controllers\BarangController@index');
-Route::get("/admin/barang/create",'App\Http\Controllers\BarangController@index');
-Route::post("/admin/barang/ceate",'App\Http\Controllers\BarangController@index');
-Route::get("/admin/barang/update/{id}",'App\Http\Controllers\BarangController@edit');
-Route::post("/admin/barang/update/{id}",'App\Http\Controllers\BarangController@update');
-Route::get("/admin/barang/delete/{id}",'App\Http\Controllers\BarangController@destroy');
+Route::group(['prefix' => 'admin', 'middleware' => [SessionNamaBagian::class]] ,function () {
+  // CRUD Pegawai
+  Route::get("/pegawai",'App\Http\Controllers\PegawaiController@index');
+  Route::get("/pegawai/create",'App\Http\Controllers\PegawaiController@create');
+  Route::post("/pegawai/ceate",'App\Http\Controllers\PegawaiController@store');
+  Route::get("/pegawai/update/{id}",'App\Http\Controllers\PegawaiController@edit');
+  Route::post("/pegawai/update/{id}",'App\Http\Controllers\PegawaiController@update');
+  Route::get("/pegawai/delete/{id}",'App\Http\Controllers\PegawaiController@destroy');
+  // CRUD Bagian
+  Route::get("/bagian",'App\Http\Controllers\BagianController@index');
+  Route::get("/bagian/create",'App\Http\Controllers\BagianController@create');
+  Route::post("/bagian/create",'App\Http\Controllers\BagianController@store');
+  Route::get("/bagian/update/{id}",'App\Http\Controllers\BagianController@edit');
+  Route::post("/bagian/update/{id}",'App\Http\Controllers\BagianController@update');
+  Route::get("/bagian/delete/{id}",'App\Http\Controllers\BagianController@destroy');
+  // CRUD Barang
+  Route::get("/barang",'App\Http\Controllers\BarangController@index');
+  Route::get("/barang/create",'App\Http\Controllers\BarangController@create');
+  Route::post("/barang/create",'App\Http\Controllers\BarangController@store');
+  Route::get("/barang/update/{id}",'App\Http\Controllers\BarangController@edit');
+  Route::post("/barang/update/{id}",'App\Http\Controllers\BarangController@update');
+  Route::get("/barang/delete/{id}",'App\Http\Controllers\BarangController@destroy');
+});
 
-// //! Admin Foreign Key 8
-// // Monitor Manajer
-Route::get("/bullwhip",'App\Http\Controllers\Controller@bullwhip');
-Route::get("/bullwhip/graphic",'App\Http\Controllers\Controller@bullwhipGraphic');
 
+// //! Manajer Foreign Key 8
+Route::group(['prefix' => 'bullwhip', 'middleware' => [SessionNamaBagian::class]] , function () {
+  Route::get("/",'App\Http\Controllers\Controller@bullwhip');
+  Route::get("/graphic",'App\Http\Controllers\Controller@bullwhipGraphic');
+});
 
 // //! Gudang Foreign Key 9
-// // CMS Gudang
-Route::get("/gudang",'App\Http\Controllers\PengambilanController@gudang');
-Route::get("/gudang/pengambilan",'App\Http\Controllers\PengambilanController@index');
-// Route::get("/gudang/pengambilan/create",'App\Http\Controllers\BagianController@index');
-// Route::post("/gudang/pengambilan/create",'App\Http\Controllers\BagianController@index');
+Route::group(['prefix' => 'gudang', 'middleware' => [SessionNamaBagian::class]] , function () {
+  Route::get("/",'App\Http\Controllers\PengambilanController@gudang');
+  Route::get("/pengambilan",'App\Http\Controllers\PengambilanController@index');
+});
 
 // ! Pesanan Foreign Key 10
-// CMS Pesanan
-Route::get("/pemesanan",'App\Http\Controllers\PemesananController@index');
-// Route::get("/pemesanan/update/{id}",'App\Http\Controllers\BagianController@index');
-// Route::post("/pemesanan/update/{id}",'App\Http\Controllers\BagianController@index');
-Route::get("/pemesanan/produksi",'App\Http\Controllers\PemesananController@readProduksi');
+Route::group(['prefix' => 'pemesanan', 'middleware' => [SessionNamaBagian::class]] , function () {
+  Route::get("/",'App\Http\Controllers\PemesananController@index');
+  Route::get("/create",'App\Http\Controllers\PemesananController@create');
+  Route::post("/create",'App\Http\Controllers\PemesananController@store');
+  Route::get("/produksi",'App\Http\Controllers\PemesananController@readProduksi');
+});
 
 // ! Produksi Foreign Key 11
-// CMS Produksi
-Route::get("/produksi",'App\Http\Controllers\ProduksiController@index');
-// Route::get("/produksi/create",'App\Http\Controllers\BagianController@index');
-// Route::post("/produksi/create",'App\Http\Controllers\BagianController@index');
-// Route::get("/produksi/update/{id}",'App\Http\Controllers\BagianController@index');
-// Route::post("/produksi/update/{id}",'App\Http\Controllers\BagianController@index');
+Route::group(['prefix' => 'produksi', 'middleware' => [SessionNamaBagian::class]] , function () {
+  Route::get("/",'App\Http\Controllers\ProduksiController@index');
+  Route::get("/update/{id}",'App\Http\Controllers\ProduksiController@update');
+});

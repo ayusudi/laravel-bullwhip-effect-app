@@ -2,6 +2,13 @@
     'links_sidebar' => $links_sidebar
 ])
   <div class="container-fluid">
+    @if(count($errors) > 0)
+        @foreach ($errors->all() as $error)
+        <div class="alert alert-primary" role="alert">
+            {{ $error }}
+        </div>
+        @endforeach
+    @endif
       <div class="card shadow">
           <div class="card-header py-3 d-flex justify-content-between">
               <p class="text-primary m-0 fw-bold">{{$title_page}}</p>
@@ -39,6 +46,10 @@
                             <tr>
                               <td>{{$el['id_bagian']}}</td>
                               <td>{{$el['nama_bagian']}}</td>
+                              <td>
+                                <a class="btn btn-primary" href="{{url('/admin/bagian/update/'.$el['id_bagian'])}}">Update</a>
+                                <a class="btn btn-secondary" href="{{url('/admin/bagian/delete/'.$el['id_bagian'])}}">Delete</a>
+                              </td>
                             </tr>
                             @elseif ($title_page === 'Barang') 
                             <tr>
@@ -50,10 +61,48 @@
                               </td>
                             </tr>
                             @elseif ($title_page === 'Pengambilan') 
+                            <tr>
+                              <td>{{$el['id_pengambilan']}}</td>
+                              <td>{{$el['nama_pengambil']}}</td>
+                              <td>{{$el['barang']['nama_barang']}}</td>
+                              <td>{{$el['jumlah_pengambilan']}}</td>
+                            </tr>
                             @elseif ($title_page === 'Stock Gudang') 
+                            <tr>
+                              <td>{{$el['id_barang']}}</td>
+                              <td>{{$el['nama_barang']}}</td>
+                              <td>{{$el['total_produksi']}}</td>
+                              <td>{{$el['total_pengambilan']}}</td>
+                              <td>{{$el['stok_barang']}}</td>
+                            </tr>
                             @elseif ($title_page === 'Pemesanan') 
+                            <tr>
+                              <td>{{$el['id_pesanan']}}</td>
+                              <td>{{$el['nama_pemesan']}}</td>
+                              <td>{{$el['barang']['nama_barang']}}</td>
+                              <td>{{$el['jumlah_pesanan']}}</td>
+                            </tr>
                             @elseif ($title_page === 'Pesanan Produksi') 
+                            <tr>
+                              <td>{{$el['id_produksi']}}</td>
+                              <td>{{$el['barang']['nama_barang']}}</td>
+                              <td>{{$el['pesanan']['nama_pemesan']}}</td>
+                              <td>{{$el['jumlah_produksi']}}</td>
+                              <td>{{$el['pesanan']['proses']}}</td>
+                              <td>{{$el['lead_time']}}</td>
+                            </tr>
                             @elseif ($title_page === 'Produksi') 
+                            <tr>
+                              <td>{{$el['id_produksi']}}</td>
+                              <td>{{$el['barang']['nama_barang']}}</td>
+                              <td>{{$el['jumlah_produksi']}}</td>
+                              <td>{{$el['lead_time']}}</td>
+                              <td>
+                                @if($el['pesanan']['proses']) On Progress 🚀 
+                                @else Pending <a class="btn btn-primary btn-sm" href="{{url('/produksi/update/'.$el['id_produksi'])}}">Change</a>
+                                @endif
+                              </td>
+                            </tr>
                             @elseif ($title_page === 'BullWhip Effect Table Barang')
                             <tr>
                               <td>{{$el['id_barang']}}</td>

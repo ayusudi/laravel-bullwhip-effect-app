@@ -1,3 +1,75 @@
+# How to Run ? 
+
+- Prerequisite
+  - Composer
+  - Larvel 9
+  - MySQL with database TK4
+
+- Command Line
+
+```bash
+$ composer install 
+$ php artisan migrate:reset
+$ php artisan migrate:fresh --seed
+$ php artisan serve 
+```
+
+Open browser and try some roles from 'id_bagian' by login with these accounts :
+```
+Username : admin123
+Password : admin 
+
+Username : manajer123
+Password : manajer
+
+Username : gudang123
+Password : gudang
+
+Username : pesanan123
+Password : pesanan
+
+Username : produksi123
+Password : produksi
+```
+
+Available Endpoints : 
+
+- GET /
+- GET /login
+- POST /login
+- GET /logout
+
+- GET /admin/bagian
+- GET /admin/bagian/create
+- POST /admin/bagian/create
+- GET /admin/bagian/update/{id}
+- POST /admin/bagian/update/{id}
+- GET /admin/bagian/delete/{id}
+
+- GET /admin/pegawai
+- GET /admin/pegawai/create
+- POST /admin/pegawai/create
+- GET /admin/pegawai/update/{id}
+- POST /admin/pegawai/update/{id}
+- GET /admin/pegawai/delete/{id}
+
+- GET /admin/barang
+- GET /admin/barang/create
+- POST /admin/barang/create
+- GET /admin/barang/update/{id}
+- POST /admin/barang/update/{id}
+- GET /admin/barang/delete/{id}
+
+- GET /pemesanan
+- GET /produksi
+- GET /produksi/update/{id}
+- GET /gudang
+- GET /gudang/pengambilan
+- GET /bullwhip
+- GET /bullwhip/graphic
+
+---
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">

@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Pegawai extends Model
 {
     use HasFactory;
-    protected $primaryKey = 'id_pegawai';
     protected $table = 'pegawai';
+    protected $primaryKey = 'id_pegawai';
     protected $fillable = [
         'username',
         'password',
