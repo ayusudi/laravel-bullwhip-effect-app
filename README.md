@@ -14,6 +14,9 @@ $ php artisan migrate:fresh --seed
 $ php artisan serve 
 ```
 
+> !! If not running migration via php artisan, check file `setup.sql` and run query manually.
+> setup.sql include DDL for create table and DML for insert data.
+
 Open browser and try some roles from 'id_bagian' by login with these accounts :
 ```
 Username : admin123
