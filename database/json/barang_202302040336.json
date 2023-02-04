@@ -1,0 +1,568 @@
+{
+"barang": [
+	{
+		"id_barang" : 24,
+		"nama_barang" : "setoran transfer rangkap 3",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 25,
+		"nama_barang" : "bukti setoran tunai",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 26,
+		"nama_barang" : "form penarikan",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 27,
+		"nama_barang" : "form multi payment",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 28,
+		"nama_barang" : "transaksi antar teller",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 29,
+		"nama_barang" : "aplikasi umum",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 30,
+		"nama_barang" : "form keluhan nasabah",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 31,
+		"nama_barang" : "aplikasi pembukaan rekening prod",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 32,
+		"nama_barang" : "syarat umum",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 33,
+		"nama_barang" : "syarat khusus",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 34,
+		"nama_barang" : "speciment TT",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 35,
+		"nama_barang" : "ban uang Rp 100.000",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 36,
+		"nama_barang" : "ban uang Rp 50.000",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 37,
+		"nama_barang" : "barang not found",
+		"archive_status" : 1
+	},
+	{
+		"id_barang" : 38,
+		"nama_barang" : "amplop kantong uang besar",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 39,
+		"nama_barang" : "form praktis 2 PLY",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 40,
+		"nama_barang" : "form kunjungan nasabah mikro",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 41,
+		"nama_barang" : "amplop kabinet tanpa kaca",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 42,
+		"nama_barang" : "amplop kabinet kaca",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 43,
+		"nama_barang" : "kop surat",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 44,
+		"nama_barang" : "advice debet",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 45,
+		"nama_barang" : "kop surat mandiri (hal1)",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 46,
+		"nama_barang" : "kop surat mandiri (hal 2)",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 47,
+		"nama_barang" : "amplop putih kabinet",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 48,
+		"nama_barang" : "amplop putih kaca kabinet",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 49,
+		"nama_barang" : "amplop coklat kecil (A)",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 50,
+		"nama_barang" : "amplop coklat sedang (C)",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 51,
+		"nama_barang" : "amplop coklat folio (D)",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 52,
+		"nama_barang" : "amplop cokelat besar (E)",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 53,
+		"nama_barang" : "amplop kantong uang kecil",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 54,
+		"nama_barang" : "amplop kantong uang kecil (bertu",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 55,
+		"nama_barang" : "amplop kantong uang sedang (bert",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 56,
+		"nama_barang" : "amplop plastik deposito (biru)",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 57,
+		"nama_barang" : "advice kredit",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 58,
+		"nama_barang" : "internal Debet (HVS)",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 59,
+		"nama_barang" : "internal Debet (NCR)",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 60,
+		"nama_barang" : "internal credit (hvs)",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 61,
+		"nama_barang" : "internal credit (NCR)",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 62,
+		"nama_barang" : "aplikasi pemb.rek.perorangan (BP",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 63,
+		"nama_barang" : "Aplikasi pemb.rek.non perorangan",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 64,
+		"nama_barang" : "form aplikasi umum",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 65,
+		"nama_barang" : "setoran\/transfer\/kliring\/inkaso",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 66,
+		"nama_barang" : "syarat umum pemb.rek.tabungan",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 67,
+		"nama_barang" : "laporan teller pagi",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 68,
+		"nama_barang" : "laporan teller pagi (NCR)",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 69,
+		"nama_barang" : "laporan teller sore (NCR)",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 70,
+		"nama_barang" : "laporan teller sore ",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 71,
+		"nama_barang" : "form penutupan kartu kredit",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 72,
+		"nama_barang" : "pembayaran kartu kredit mandiri",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 73,
+		"nama_barang" : "aplikasi kartu kredit mandiri",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 74,
+		"nama_barang" : "aplikasi keluhan nasabah",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 75,
+		"nama_barang" : "aplikasi sms banking & internet ",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 76,
+		"nama_barang" : "syarat khusus pemb.rek.tabungan",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 77,
+		"nama_barang" : "syarat khusus Giro Rupiah",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 78,
+		"nama_barang" : "apl.pemb.rek. tabungan rencana m",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 79,
+		"nama_barang" : "sticker registrasi",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 80,
+		"nama_barang" : "sticker registrasi (spotlight)",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 81,
+		"nama_barang" : "kartu nama",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 82,
+		"nama_barang" : "form wakat penyerahan",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 83,
+		"nama_barang" : "form bukti penyerahan",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 84,
+		"nama_barang" : "rekening koran",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 85,
+		"nama_barang" : "stop map rekening giro",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 86,
+		"nama_barang" : "stopmap rekening mandiri",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 87,
+		"nama_barang" : "form perpanjangan otomatis depos",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 88,
+		"nama_barang" : "form tabungan haji",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 89,
+		"nama_barang" : "form transaksi antar teller",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 90,
+		"nama_barang" : "form pembayaran pajak",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 91,
+		"nama_barang" : "form pembayaran telpon",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 92,
+		"nama_barang" : "KTP khusus pengambilan ridho",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 93,
+		"nama_barang" : "KTPI Khusus percetakan transaksi",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 94,
+		"nama_barang" : "nota pembelian \/penjualan paluta",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 95,
+		"nama_barang" : "form laporam uang palsu,",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 96,
+		"nama_barang" : "form pembayaran KKN",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 97,
+		"nama_barang" : "syarat khusus rekening giro (2 s",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 98,
+		"nama_barang" : "surat pernyataan TPDPN",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 99,
+		"nama_barang" : "form kunjungan nasabah safe D Bo",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 100,
+		"nama_barang" : "syarat khusus rekening tabungan",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 101,
+		"nama_barang" : "form keluhan Visa",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 102,
+		"nama_barang" : "aplikasi pembuka deposito",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 103,
+		"nama_barang" : "stomap gantung (pink)",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 104,
+		"nama_barang" : "stop map 2color (biru-kuning)",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 105,
+		"nama_barang" : "form SUKUK",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 106,
+		"nama_barang" : "form SBMPTN",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 107,
+		"nama_barang" : "form IBT masuk",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 108,
+		"nama_barang" : "sticker sortir uang (Cab KIC)",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 109,
+		"nama_barang" : "memo setoran tunai",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 110,
+		"nama_barang" : "form transaksi singkat",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 111,
+		"nama_barang" : "informasi penggantian kartu ATM",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 112,
+		"nama_barang" : "informasi penggantian buku tabun",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 113,
+		"nama_barang" : "brosur tabungan mandiri",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 114,
+		"nama_barang" : "aplikasi &SK perdebetan direct d",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 115,
+		"nama_barang" : "sticker DALAM PENGAWASAN (CRC)",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 116,
+		"nama_barang" : "sticker sealed uang",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 117,
+		"nama_barang" : "form klaim asuransi sinarmas",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 118,
+		"nama_barang" : "KMS (money Trans S)",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 119,
+		"nama_barang" : "form pembukaan reksa dana mandir",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 120,
+		"nama_barang" : "form pembelian, reksa dana",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 121,
+		"nama_barang" : "form penjualan kembali reksa dan",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 122,
+		"nama_barang" : "form mandiri sekuritas",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 123,
+		"nama_barang" : "form pembayaran pajak (1\/2 hal u",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 124,
+		"nama_barang" : "apl.pemb.rek giro (badan)",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 125,
+		"nama_barang" : "syarat khusus Giro (badan)",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 126,
+		"nama_barang" : "form WALK IN CUSTUMER",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 127,
+		"nama_barang" : "form aplikasi mandiri internet b",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 128,
+		"nama_barang" : "form bill payment \/ DIRECT DEBET",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 129,
+		"nama_barang" : "aplikasi tabungan rencana mandir",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 130,
+		"nama_barang" : "form praktis 3 PLY",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 131,
+		"nama_barang" : "kuitansi",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 132,
+		"nama_barang" : "aplikasi pemb.rek.prod.dana P (l",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 133,
+		"nama_barang" : "form praktis \"cab. pandanaran\"",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 134,
+		"nama_barang" : "form pemesanan pembelian unit pe",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 135,
+		"nama_barang" : "form mandiri internet bisnis",
+		"archive_status" : 0
+	},
+	{
+		"id_barang" : 136,
+		"nama_barang" : "form konfirmasi penarikan",
+		"archive_status" : 0
+	}
+]}

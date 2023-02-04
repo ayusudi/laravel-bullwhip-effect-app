@@ -1,0 +1,43 @@
+{
+"pegawai": [
+	{
+		"id_pegawai" : 7,
+		"username" : "admin",
+		"password" : "admin",
+		"nama_pegawai" : "administrator",
+		"alamat_pegawai" : "kantor",
+		"hp_pegawai" : "085214021108",
+		"id_bagian" : 7,
+		"archive_status" : 0
+	},
+	{
+		"id_pegawai" : 9,
+		"username" : "satria",
+		"password" : "admin",
+		"nama_pegawai" : "satria",
+		"alamat_pegawai" : "semarang",
+		"hp_pegawai" : "085214021108",
+		"id_bagian" : 7,
+		"archive_status" : 0
+	},
+	{
+		"id_pegawai" : 10,
+		"username" : "amir",
+		"password" : "amir",
+		"nama_pegawai" : "amir",
+		"alamat_pegawai" : "semarang",
+		"hp_pegawai" : "08080808",
+		"id_bagian" : 8,
+		"archive_status" : 0
+	},
+	{
+		"id_pegawai" : 11,
+		"username" : "anin",
+		"password" : "pemesanan",
+		"nama_pegawai" : "anin",
+		"alamat_pegawai" : "semarang",
+		"hp_pegawai" : "004859",
+		"id_bagian" : 10,
+		"archive_status" : 0
+	}
+]}

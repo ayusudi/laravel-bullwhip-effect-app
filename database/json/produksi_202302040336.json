@@ -1,0 +1,379 @@
+{
+"produksi": [
+	{
+		"id_produksi" : 69,
+		"id_barang" : 38,
+		"id_pesanan" : 96,
+		"jumlah_produksi" : "600",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 70,
+		"id_barang" : 38,
+		"id_pesanan" : 70,
+		"jumlah_produksi" : "1000",
+		"lead_time" : "3",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 71,
+		"id_barang" : 37,
+		"id_pesanan" : 69,
+		"jumlah_produksi" : "1000",
+		"lead_time" : "3",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 72,
+		"id_barang" : 37,
+		"id_pesanan" : 69,
+		"jumlah_produksi" : "1000",
+		"lead_time" : "3",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 73,
+		"id_barang" : 37,
+		"id_pesanan" : 97,
+		"jumlah_produksi" : "600",
+		"lead_time" : "2",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 74,
+		"id_barang" : 31,
+		"id_pesanan" : 90,
+		"jumlah_produksi" : "1050",
+		"lead_time" : "3",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 75,
+		"id_barang" : 31,
+		"id_pesanan" : 79,
+		"jumlah_produksi" : "1000",
+		"lead_time" : "3",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 76,
+		"id_barang" : 31,
+		"id_pesanan" : 63,
+		"jumlah_produksi" : "1000",
+		"lead_time" : "3",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 77,
+		"id_barang" : 29,
+		"id_pesanan" : 76,
+		"jumlah_produksi" : "55",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 78,
+		"id_barang" : 29,
+		"id_pesanan" : 88,
+		"jumlah_produksi" : "50",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 79,
+		"id_barang" : 29,
+		"id_pesanan" : 61,
+		"jumlah_produksi" : "50",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 80,
+		"id_barang" : 35,
+		"id_pesanan" : 94,
+		"jumlah_produksi" : "5000",
+		"lead_time" : "4",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 81,
+		"id_barang" : 35,
+		"id_pesanan" : 67,
+		"jumlah_produksi" : "6000",
+		"lead_time" : "4",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 82,
+		"id_barang" : 36,
+		"id_pesanan" : 68,
+		"jumlah_produksi" : "6000",
+		"lead_time" : "4",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 83,
+		"id_barang" : 36,
+		"id_pesanan" : 95,
+		"jumlah_produksi" : "5000",
+		"lead_time" : "4",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 84,
+		"id_barang" : 25,
+		"id_pesanan" : 57,
+		"jumlah_produksi" : "98",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 85,
+		"id_barang" : 25,
+		"id_pesanan" : 72,
+		"jumlah_produksi" : "200",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 86,
+		"id_barang" : 25,
+		"id_pesanan" : 84,
+		"jumlah_produksi" : "50",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 87,
+		"id_barang" : 30,
+		"id_pesanan" : 62,
+		"jumlah_produksi" : "30",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 88,
+		"id_barang" : 30,
+		"id_pesanan" : 77,
+		"jumlah_produksi" : "30",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 89,
+		"id_barang" : 30,
+		"id_pesanan" : 89,
+		"jumlah_produksi" : "30",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 90,
+		"id_barang" : 27,
+		"id_pesanan" : 86,
+		"jumlah_produksi" : "30",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 91,
+		"id_barang" : 27,
+		"id_pesanan" : 59,
+		"jumlah_produksi" : "40",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 92,
+		"id_barang" : 26,
+		"id_pesanan" : 73,
+		"jumlah_produksi" : "100",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 93,
+		"id_barang" : 26,
+		"id_pesanan" : 85,
+		"jumlah_produksi" : "50",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 94,
+		"id_barang" : 26,
+		"id_pesanan" : 58,
+		"jumlah_produksi" : "100",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 95,
+		"id_barang" : 39,
+		"id_pesanan" : 78,
+		"jumlah_produksi" : "100",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 96,
+		"id_barang" : 24,
+		"id_pesanan" : 71,
+		"jumlah_produksi" : "200",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 97,
+		"id_barang" : 24,
+		"id_pesanan" : 83,
+		"jumlah_produksi" : "200",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 98,
+		"id_barang" : 24,
+		"id_pesanan" : 56,
+		"jumlah_produksi" : "200",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 99,
+		"id_barang" : 34,
+		"id_pesanan" : 93,
+		"jumlah_produksi" : "1000",
+		"lead_time" : "3",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 100,
+		"id_barang" : 34,
+		"id_pesanan" : 82,
+		"jumlah_produksi" : "1000",
+		"lead_time" : "3",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 101,
+		"id_barang" : 34,
+		"id_pesanan" : 66,
+		"jumlah_produksi" : "200",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 102,
+		"id_barang" : 33,
+		"id_pesanan" : 65,
+		"jumlah_produksi" : "500",
+		"lead_time" : "2",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 103,
+		"id_barang" : 33,
+		"id_pesanan" : 81,
+		"jumlah_produksi" : "1000",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 104,
+		"id_barang" : 32,
+		"id_pesanan" : 91,
+		"jumlah_produksi" : "500",
+		"lead_time" : "2",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 105,
+		"id_barang" : 32,
+		"id_pesanan" : 80,
+		"jumlah_produksi" : "500",
+		"lead_time" : "2",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 106,
+		"id_barang" : 32,
+		"id_pesanan" : 64,
+		"jumlah_produksi" : "500",
+		"lead_time" : "2",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 107,
+		"id_barang" : 32,
+		"id_pesanan" : 92,
+		"jumlah_produksi" : "1000",
+		"lead_time" : "3",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 108,
+		"id_barang" : 32,
+		"id_pesanan" : 92,
+		"jumlah_produksi" : "1000",
+		"lead_time" : "3",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 109,
+		"id_barang" : 28,
+		"id_pesanan" : 87,
+		"jumlah_produksi" : "50",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 110,
+		"id_barang" : 28,
+		"id_pesanan" : 60,
+		"jumlah_produksi" : "100",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 111,
+		"id_barang" : 28,
+		"id_pesanan" : 75,
+		"jumlah_produksi" : "50",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 112,
+		"id_barang" : 37,
+		"id_pesanan" : 97,
+		"jumlah_produksi" : "300",
+		"lead_time" : "1",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 113,
+		"id_barang" : 24,
+		"id_pesanan" : 56,
+		"jumlah_produksi" : "210",
+		"lead_time" : "2",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 114,
+		"id_barang" : 24,
+		"id_pesanan" : 56,
+		"jumlah_produksi" : "210",
+		"lead_time" : "2",
+		"archive_status" : 0
+	},
+	{
+		"id_produksi" : 115,
+		"id_barang" : 24,
+		"id_pesanan" : 56,
+		"jumlah_produksi" : "210",
+		"lead_time" : "2",
+		"archive_status" : 0
+	}
+]}
