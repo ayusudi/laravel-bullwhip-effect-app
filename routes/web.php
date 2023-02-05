@@ -60,8 +60,6 @@ Route::group(['prefix' => 'gudang', 'middleware' => [SessionNamaBagian::class]] 
 // ! Pesanan Foreign Key 10
 Route::group(['prefix' => 'pemesanan', 'middleware' => [SessionNamaBagian::class]] , function () {
   Route::get("/",'App\Http\Controllers\PemesananController@index');
-  Route::get("/create",'App\Http\Controllers\PemesananController@create');
-  Route::post("/create",'App\Http\Controllers\PemesananController@store');
   Route::get("/produksi",'App\Http\Controllers\PemesananController@readProduksi');
 });
 
