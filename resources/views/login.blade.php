@@ -14,7 +14,7 @@
                             <div class="col-lg-6 p-5">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h4 class="text-dark mb-4">Welcome to <br>BullWhip Task Team 4!</h4>
+                                        <h4 class="text-dark mb-4">Welcome to <br>BullWhip Effect Task Team 4!</h4>
                                     </div>
                                     <form class="user py-3" method="POST" action="/login">
                                         @csrf
