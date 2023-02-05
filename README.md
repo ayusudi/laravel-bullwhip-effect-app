@@ -1,3 +1,28 @@
+# Video : Pembahasan Web Aplikasi
+ 
+- Code
+  - Migration
+  - Seeder
+  - Routes
+  - MVC 
+  - Middleware 
+- Obstacle 
+  - Mismatch data foreign key in INSERT Query.
+  - PHP Native to Framework Laravel.  
+    By default table in laravel use plural and primary key is `id`. We need to customize.
+  - Hard to understand navigation web in UI PHP Native for each role.
+  - Chartist.js package for chart bullwhimp are outdated.
+  - Using hard delete for deleting main table.
+- Adjustment 
+  - Implement relation in migration.
+  - Implement seeder with json file.
+  - Implement eager loading with relation in model.
+  - Implement soft delete.
+  - Implement session.
+  - Implement error message.
+  - Implement view code with partial part element (component).
+
+
 # How to Run ? 
 
 - Prerequisite

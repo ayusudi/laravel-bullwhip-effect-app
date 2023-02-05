@@ -30,7 +30,6 @@
         </div>
         <div class="card-body">
             <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
-            
              <div class="ct-chart ct-perfect-fourth"></div>
             </div>
         </div>
@@ -44,14 +43,12 @@ foreach ($DaftarBE as $key => $data) {
     $resultlabel[] = "'".trim($data["nama_barang"], " \t\n\r\0\x0B")."'";
 }
 $resultlbl = implode(",", $resultlabel);
-
 //BE
 $resultbe = array();
 foreach ($DaftarBE as $key => $data) {
     $resultbe[] = trim($data["BE"], " \t\n\r\0\x0B");
 }
 $resultBE = implode(",", $resultbe);
-
 //parameter
 $resultparam = array();
 foreach ($DaftarBE as $key => $data) {
