@@ -27,7 +27,7 @@
 
 - Prerequisite
   - Composer
-  - Larvel 9
+  - Laravel 9
   - MySQL with database TK4
 
 - Command Line
