@@ -116,7 +116,11 @@
                               <td>{{$el['BE'] ?  $el['BE'] : '*'}}</td>
                               <td>{{$el['lead_time']}}</td>
                               <td>{{$el['parameter']}}</td>
-                              <td>{{$el['Bullwhip_Effect'] ? $el['Bullwhip_Effect'] : '*'}}</td>
+                              <td>
+                                  @if ($el['Bullwhip_Effect'])  <button class="btn btn-primary btn-sm">👍 Solusi | BullWhip</button>
+                                  @else Tidak terjadi Bullwhip Effect
+                                  @endif
+                              </td>
                             </tr>
                             @endif
                         @endforeach
